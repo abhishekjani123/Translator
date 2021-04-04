@@ -1,0 +1,10 @@
+from translate import Translator as tr
+lang_origin = input("Enter Your Own Language: ")
+lang_destination = input("Enter the Language in which you want to convert: ") 
+user_input = input("Enter The Text you want to Translate:")
+translator= tr(from_lang=lang_origin,to_lang=lang_destination)
+translation = translator.translate(user_input)
+print("-------------------------MLH Translator---------------------------------")
+print("\n"+lang_origin + " -> " + lang_destination + "\n")
+print(translation)
+print("------------------------------------------------------------------------")
